@@ -18,5 +18,5 @@ end
 
 #test
 
-p caesar_cipher("abc", 2) == "cde"
-p caesar_cipher("bcd",3) == "efg"
+p caesar_cipher("ab?c", 2) == "cd?e"
+p caesar_cipher("Bcd",3) == "Efg"
