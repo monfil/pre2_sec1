@@ -16,17 +16,7 @@ def caesar_cipher(original_text, rotate_number)
   cipher_text
 end
 
-str = "DEF"
-str.each_byte {|char| puts char, " " }
+#test
 
-str = "Carlos y Marta fueron al baile"
-chars = str.scan(/./)
-chars.each {|char| puts char, " " }
-
-str = "alpha,beta,gamma,,"
-lista1 = str.split(",") # ["alpha","beta","gamma"]
-lista2 = str.split(",",2) # ["alpha", "beta,gamma,,"]
-lista3 = str.split(",",4) # ["alpha", "beta", "gamma", ","]
-lista4 = str.split(",",8) # ["alpha", "beta", "gamma", "", ""]
-lista5 = str.split(",",-1) # ["alpha", "beta", "gamma", "", ""]
-puts lista1,lista2, lista3, lista4, lista5
+p caesar_cipher("abc", 2) == "cde"
+p caesar_cipher("bcd",3) == "efg"
