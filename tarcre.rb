@@ -1,6 +1,6 @@
 def error_message(name, credit_card_type, credit_card_number)
   if credit_card_type == "#{credit_card_type}" && credit_card_number == "#{credit_card_number}"
-    "#{name}, The #{credit_card_type.upcase} Credit Card Number 'xxx-#{credit_card_number[-3]}#{credit_card_number[-2]}#{credit_card_number[-1]}' You Provided is Invalid." 
+   p "#{name}, The #{credit_card_type.upcase} Credit Card Number 'xxx-#{credit_card_number[-3, 3]}' You Provided is Invalid." 
   end
 end
 
